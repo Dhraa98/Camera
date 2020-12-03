@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:id="@+id/lnVideo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rlSelectVideo"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="200dp">
+
+
+            <com.google.android.exoplayer2.ui.PlayerView
+                android:id="@+id/IvVideoThumb"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:resize_mode="fixed_height" />
+
+
+        </RelativeLayout>
+
+        <!--Button to open camera-->
+        <Button
+            android:id="@+id/capture_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Capture Video" />
+    </LinearLayout>
+</layout>
